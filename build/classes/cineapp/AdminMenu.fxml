@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineapp.AdminMenuController">
+   <children>
+      <ImageView fx:id="backgroun" fitHeight="507.0" fitWidth="600.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.png" />
+         </image></ImageView>
+      <Button fx:id="btAjoutActu" layoutX="100.0" layoutY="124.0" mnemonicParsing="false" onAction="#AjouterActu" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #f7c139;" text="Ajouter Actualité" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btModifActu" layoutX="100.0" layoutY="188.0" mnemonicParsing="false" onAction="#ModifierActu" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #f7c139;" text="Modifier Actualité" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSuppActu" layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#SupprimerActu" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #f7c139;" text="Supprimer Actualité" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btShowActu" layoutX="100.0" layoutY="327.0" mnemonicParsing="false" onAction="#AfficherActu" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #f7c139;" text="Afficher Actualités" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" text="Exit" />
+   </children>
+</AnchorPane>

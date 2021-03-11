@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cineapp.AjouterActuController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0" layoutX="-1.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="idfilmActu" layoutX="50.0" layoutY="283.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter film id" />
+      <TextField fx:id="idpromActu" layoutX="50.0" layoutY="334.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter prom id" />
+      <Button layoutX="200.0" layoutY="401.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #f7c139;" text="Confirmer" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" text="Back" />
+      <DatePicker fx:id="dateActu" layoutX="50.0" layoutY="231.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter date" />
+      <TextArea fx:id="descriptionActu" layoutX="50.0" layoutY="68.0" prefHeight="154.0" prefWidth="498.0" promptText="Enter description" />
+   </children>
+</AnchorPane>
