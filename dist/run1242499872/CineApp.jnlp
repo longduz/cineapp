@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CineApp.jnlp">
+  <information>
+    <title>CineApp</title>
+    <vendor>mouad</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CineApp.jar" size="13777582" download="eager" />
+    <jar href="lib\io-7.1.4.jar" size="806130" download="eager" />
+    <jar href="lib\kernel-7.1.4.jar" size="1150232" download="eager" />
+    <jar href="lib\layout-7.1.4.jar" size="435612" download="eager" />
+    <jar href="lib\mail.jar" size="494975" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\pdfa-7.1.4.jar" size="46940" download="eager" />
+    <jar href="lib\slf4j.api-1.6.1.jar" size="26056" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CineApp" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cineapp.CineApp"  name="CineApp" />
+  <update check="always"/>
+</jnlp>
